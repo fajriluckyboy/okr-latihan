@@ -8,7 +8,7 @@ istirahat selama 1 jam pada siang hari.
 
 ## Kebijakan Cuti
 
-Setiap karyawan tetap berhak atas 12 hari cuti tahunan,
+Setiap karyawan tetap berhak atas 15 hari cuti tahunan,
 yang dapat diambil setelah masa kerja minimal 3 bulan.
 Pengajuan cuti dilakukan minimal 3 hari kerja sebelum
 tanggal yang diinginkan.
