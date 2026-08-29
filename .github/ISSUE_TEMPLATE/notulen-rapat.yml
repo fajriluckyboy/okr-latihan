@@ -1,0 +1,55 @@
+# nama template yang MUNCUL di
+# daftar pilihan saat buat Issue baru
+name: Notulen Rapat
+# deskripsi singkat di bawah nama
+description: Arsip catatan hasil rapat tim
+# judul awal, sekretaris tinggal
+# lengkapi tanggalnya
+title: "[Notulen] Rapat tanggal "
+# label otomatis tertempel, memudahkan
+# filter semua arsip notulen
+labels: ["notulen"]
+body:
+  # kolom teks pendek untuk tanggal rapat
+  - type: input
+    id: tanggal-rapat
+    attributes:
+      label: Tanggal Rapat
+      placeholder: "contoh: 29 Agustus 2026"
+    validations:
+      required: true
+  # kolom teks panjang untuk daftar peserta
+  - type: textarea
+    id: peserta
+    attributes:
+      label: Peserta
+      description: Daftar nama yang hadir dalam rapat
+      placeholder: "Nama 1, Nama 2, Nama 3, ..."
+    validations:
+      required: true
+  # kolom teks panjang untuk agenda yang dibahas
+  - type: textarea
+    id: agenda
+    attributes:
+      label: Agenda
+      description: Poin-poin yang dibahas dalam rapat
+    validations:
+      required: true
+  # kolom teks panjang untuk keputusan yang diambil
+  - type: textarea
+    id: keputusan
+    attributes:
+      label: Keputusan
+      description: Hasil keputusan yang disepakati
+    validations:
+      required: true
+  # kolom teks panjang untuk tindak lanjut,
+  # opsional karena tidak semua rapat
+  # menghasilkan tindak lanjut konkret
+  - type: textarea
+    id: tindak-lanjut
+    attributes:
+      label: Tindak Lanjut
+      description: Siapa bertanggung jawab melakukan apa setelah rapat
+    validations:
+      required: false
